@@ -276,6 +276,19 @@
     </group>
   </macro>
 
+  <macro name="same-place">
+    <group delimiter=", ">
+      <text term="ibid" font-style="italic"/>
+      <text macro="issue-pagination-locator"/>
+      <!-- If we don't test first, it will render as an empty string -->
+      <choose>
+        <if variable="note">
+          <text macro="note"/>
+        </if>
+      </choose>
+    </group>
+  </macro>
+
 
   <macro name="citation-reference">
     <group delimiter=". ">
@@ -359,11 +372,15 @@
     </choose>
   </macro>
   <citation et-al-min="1" et-al-use-first="1" near-note-distance="5">
-    <layout suffix="." delimiter="&#8239;; ">
+    <layout suffix="." delimiter="&#8239;;   ">
       <choose>
-        <if position="near-note ibid" match="any">
-          <text macro="already-cited"/>
+        <if position="ibid">
+          <text macro="same-place"/>
         </if>
+        <!-- "near-note" seems to be broken, falling back to subsequent after eliminating ibid, which is a more specific case -->
+        <else-if position="subsequent">
+          <text macro="already-cited"/>
+        </else-if>
         <else>
           <text macro="citation-reference"/>
         </else>

@@ -4,15 +4,28 @@
 @a
 
 #lorem(200)
+@b
+Separator
+@a
+Another separator
+@c
+
+Now without separators.
 @a
 @b
-
-#lorem(200)
 @c
-@b
+// Should render op.cit.
+
+
+#pagebreak()
+
 
 #lorem(200)
-@d
+@a
+
+#lorem(200)
+@a[p. 156]
+// Should render ibid.
 
 
 #bibliography("bibliography.yaml", style: "style.csl")
