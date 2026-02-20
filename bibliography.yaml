@@ -1,0 +1,16 @@
+a:
+  type: book
+  author: Alice
+  title: Nous dirigeons-nous vers la singularité ?
+b:
+  type: book
+  author: Bob
+  title: Sur la dualité onde-corpuscule de la lumière
+c:
+  type: book
+  author: Carol
+  title: L'origine insolite des trépieds
+d:
+  type: book
+  author: Dave
+  title: Les quatres fanatiques
