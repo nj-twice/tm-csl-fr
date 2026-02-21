@@ -16,6 +16,14 @@ Now without separators.
 @c
 // Should render op.cit.
 
+#lorem(100)
+@e
+#lorem(50)
+@a
+#lorem(50)
+@e
+// Shouldn't be empty
+
 
 #pagebreak()
 

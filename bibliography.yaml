@@ -14,3 +14,7 @@ d:
   type: book
   author: Dave
   title: Les quatres fanatiques
+e:
+  type: book
+  author: # Unknown
+  title: L'inconnu à la plume
