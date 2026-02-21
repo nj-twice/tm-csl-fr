@@ -377,7 +377,7 @@
         <if position="ibid">
           <text macro="same-place"/>
         </if>
-        <!-- "near-note" seems to be broken, falling back to subsequent after eliminating ibid, which is a more specific case -->
+        <!-- "near-note" seems to be broken, falling back to "subsequent" after handling ibid first, which is a more specific case. -->
         <else-if position="subsequent">
           <text macro="already-cited"/>
         </else-if>
