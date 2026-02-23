@@ -13,8 +13,8 @@
     packages.x86_64-linux.default = pkgs.callPackage
         (
           {
-            self, stdenv
-          }: stdenv.mkDerivation rec {
+            self, stdenvNoCC
+          }: stdenvNoCC.mkDerivation rec {
             name = "tm_csl_fr";
             version = "0.1";
             src = self;
