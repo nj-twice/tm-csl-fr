@@ -22,7 +22,7 @@ Now without separators.
 @a
 #lorem(50)
 @e
-// Shouldn't be empty
+Shouldn't be empty
 
 
 #pagebreak()
@@ -33,7 +33,11 @@ Now without separators.
 
 #lorem(200)
 @a[p. 156]
-// Should render ibid.
+Should render ibid.
+
+
+This is my site! @f
+Should render date after URL (in footnote).
 
 
 #bibliography("bibliography.yaml", style: "style.csl")

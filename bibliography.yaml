@@ -18,3 +18,9 @@ e:
   type: book
   author: # Unknown
   title: L'inconnu à la plume
+f:
+  type: web
+  title: Mon site web haha
+  url:
+    value: https://example.com
+    date: 2009-05-17
