@@ -24,3 +24,15 @@ f:
   url:
     value: https://example.com
     date: 2009-05-17
+g: &g
+  type: "Book"
+  title: "L'art de se penser écrivain"
+  author: "Gargamel"
+g-1:
+  type: chapter
+  title: "Chapitre 1: L'illusion"
+  parent: *g
+g-2:
+  type: chapter
+  title: "Chapitre 2: La réalisation"
+  parent: *g
