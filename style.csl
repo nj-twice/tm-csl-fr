@@ -385,7 +385,8 @@
     <layout suffix="." delimiter="&#8239;;   ">
       <choose>
         <if position="ibid">
-          <text macro="same-place"/>
+          <!-- <text macro="same-place"/> -->
+          <text macro="already-cited"/>
         </if>
         <!-- "near-note" seems to be broken, falling back to "subsequent" after handling ibid first, which is a more specific case. -->
         <else-if position="subsequent">
